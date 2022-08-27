@@ -1,7 +1,7 @@
 let video = document.createElement('video');
 let canPlay = false;
 let loaded = false;
-
+video.onclick = e => document.documentElement.requestFullscreen();
 
 async function main(){
     if (Hls.isSupported()) {
@@ -21,7 +21,7 @@ function startPlay() {
     document.body.appendChild(video);
     video.classList.add('video');
     video.play();
-    video.requestFullscreen();
+    document.documentElement.requestFullscreen();
 }
 
 function start() {
