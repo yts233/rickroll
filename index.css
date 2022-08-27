@@ -15,6 +15,10 @@ html,body{
     color:#f00;
 }
 
+.gray{
+    color:#111;
+}
+
 .big{
     font-size:32px;
 }
