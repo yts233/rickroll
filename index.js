@@ -4,7 +4,7 @@ let loaded = false;
 video.onclick = e => document.documentElement.requestFullscreen();
 
 async function main(){
-    if (Hls.isSupported()) {
+    if (Hls?.isSupported()) {
         let hls = new Hls();
         hls.loadSource('rickroll.m3u8');
         hls.attachMedia(video);
