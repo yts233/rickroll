@@ -22,6 +22,7 @@ function startPlay() {
     video.classList.add('video');
     video.play();
     document.documentElement.requestFullscreen();
+    document.title='你被骗了';
 }
 
 function start() {
